@@ -1,5 +1,3 @@
--- gwz_sales.sql
-
 SELECT
   date_date AS sale_date,
   ROUND(SUM(turnover_before_promo), 2) AS daily_turnover,
@@ -9,4 +7,4 @@ FROM
 GROUP BY
   sale_date
 ORDER BY
-  sale_date;
+  sale_date DESC;
